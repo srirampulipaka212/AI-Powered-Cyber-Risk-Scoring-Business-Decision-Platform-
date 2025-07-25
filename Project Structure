@@ -1,0 +1,18 @@
+ai-cyber-risk-platform/
+├── data/                  # Example: security_logs/, threat_feeds/, business_events/
+├── processed/             # Cleaned and enriched datasets
+├── models/                # Trained AI/ML models (e.g., risk_scorer.pkl)
+├── notebooks/             # EDA, model tuning, business impact simulation
+│   ├── eda.ipynb
+│   └── business_impact.ipynb
+├── src/                   # Core Python modules
+│   ├── ingest.py
+│   ├── risk_scoring.py
+│   ├── business_impact.py
+│   ├── dashboard.py
+│   ├── recommend.py
+│   └── utils.py
+├── dashboards/            # Dashboard screenshots, configs, exports
+├── docs/                  # Project documentation
+├── requirements.txt       # Python dependencies
+└── README.md              # Project overview, setup, usage, business highlights
