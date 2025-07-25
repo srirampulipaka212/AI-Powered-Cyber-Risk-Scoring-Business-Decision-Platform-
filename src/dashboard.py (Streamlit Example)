@@ -1,0 +1,9 @@
+import streamlit as st
+import pandas as pd
+import plotly.express as px
+
+df = pd.read_csv('processed/final_data.csv')
+st.title('Cyber Risk & Business Impact Dashboard')
+st.write('## Top Risks by Business Impact')
+fig = px.bar(df.nlargest(10, 'downtime_cost'), x='source_ip', y='downtime_cost')
+st.plotly_chart(fig)
